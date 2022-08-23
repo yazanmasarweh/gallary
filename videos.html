@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" dir="ltr" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> 
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+  /> 
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+  <link href="./assets/css/jquery.bxslider.min.css" rel="stylesheet">
+  <link href="./dist/output.css" rel="stylesheet">
+  <link href="./dist/style.css"  rel="stylesheet">
+</head>
+<body class="font-bad" >
+    <!--navbar-->
+    <nav class="bg-gray-900 z-50">
+        <div class="flex flex-col sm:flex-row container">
+            <!--Brand-->
+            <div class="brand flex  font-black text-purple-500">
+                <span class="first-letter:text-white">ND</span> 
+                <!-- btn show in less then screen sm -->
+                <button id="toggle-nav" class="sm:hidden text-white transition-all hover:text-purple-500 rtl:mr-auto ltr:ml-auto cursor-pointer">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <!-- link show in more then screen sm -->
+            <ul id="menu" class="hidden sm:flex sm:gap-x-3 md:gap-x-4 sm:text-lg md:text-2xl text-purple-500">
+                <li class="item-nav li-nav group">
+                    <a class="a-mobile sm:a-nav" href="./index.html">
+                        <span class="sm:icon-nav"><i class="fa-solid fa-house"></i></span>
+                        <span class="sm:text-nav">Home</span> 
+                    </a>
+                </li>
+                <li class="item-nav li-nav group ">
+                    <a  class="a-mobile sm:a-nav" href="#about">
+                        <span class="sm:icon-nav"><i class="fa-solid fa-user-pen"></i></span>
+                        <span class="sm:text-nav">About</span> 
+                    </a>
+                </li>
+                <li class="item-nav li-nav group">
+                    <a class="a-mobile sm:a-nav" href="./draws.html">
+                        <span class="sm:icon-nav"><i class="fa-regular fa-images"></i></span>
+                        <span class="sm:text-nav">Drawings</span> 
+                    </a>
+                </li>
+                <li class="item-nav li-nav group ">
+                    <a class="a-mobile sm:a-nav" href="./videos.html">
+                        <span class="sm:icon-nav"><i class="fa-solid fa-video"></i></span>
+                        <span class="sm:text-nav">Videos</span> 
+                    </a>
+                </li>
+            </ul>
+        </div>  
+    </nav>
+    <!-- header -->
+    <div class="bg-gradient-to-tr from-red-400 to-orange-400 h-96 w-full">
+        <div class="relative w-1/2 text-center top-1/2  rtl:right-0 ltr:left-1/2  transform -translate-x-1/2 -translate-y-1/2" >
+            <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl pt-20 sm:pt-10 md:pt-0 font-black text-white">My Videos</h1>
+            <ul class="flex flex-wrap gap-2 sm:gap-4 font-bold justify-center my-10">
+                <li class="cursor-pointer active-fillter transition hover:text-white  transform hover:-translate-y-1">All</li>
+                <li class="cursor-pointer transition hover:text-white transform hover:-translate-y-1">Anime</li>
+                <li class="cursor-pointer transition hover:text-white transform hover:-translate-y-1">nature</li>
+                <li class="cursor-pointer transition hover:text-white transform hover:-translate-y-1">water</li>
+                <li class="cursor-pointer transition hover:text-white transform hover:-translate-y-1">defenshi</li>
+                <li class="cursor-pointer transition hover:text-white transform hover:-translate-y-1">Anime</li>
+                <li class="cursor-pointer transition hover:text-white transform hover:-translate-y-1">nature</li>
+                <li class="cursor-pointer transition hover:text-white transform hover:-translate-y-1">water</li>
+                <li class="cursor-pointer transition hover:text-white transform hover:-translate-y-1">defenshi</li>
+                <li class="cursor-pointer transition hover:text-white transform hover:-translate-y-1">Anime</li>
+                <li class="cursor-pointer transition hover:text-white transform hover:-translate-y-1">nature</li>
+                <li class="cursor-pointer transition hover:text-white transform hover:-translate-y-1">water</li>
+                <li class="cursor-pointer active-fillter transition hover:text-white transform hover:-translate-y-1">Last</li>
+                <li class="cursor-pointer transition hover:text-white transform hover:-translate-y-1">old</li>
+            
+            </ul>
+            <a href="#draws" class="text-6xl text-white transition hover:text-purple-500"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>  
+    </div>
+    <!-- all images -->
+    <div id="draws" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-gray-900 ">
+        <div class="item-draw relative overflow-hidden w-full h-72 cursor-pointer group">
+            <img class=" w-full h-full object-cover transition "  src="./uploded/1.jpg" alt="">
+            <h1 class="absolute top-0 left-0 text-4xl transition transform scale-0 group-hover:scale-100 text-white flex justify-center items-center bg-purple-500/60 w-full h-full">
+                <span class="text-7xl"><i class="fa-regular fa-circle-play"></i></span>
+            </h1>
+        </div>
+        <div class="item-draw relative overflow-hidden w-full h-72 cursor-pointer group">
+            <img class=" w-full h-full object-cover transition "  src="./uploded/2.jpg" alt="">
+            <h1 class="absolute top-0 left-0 text-4xl transition transform scale-0 group-hover:scale-100 text-white flex justify-center items-center bg-purple-500/60 w-full h-full">
+                <span class="text-7xl"><i class="fa-regular fa-circle-play"></i></span>
+            </h1>
+        </div>
+        <div class="item-draw relative overflow-hidden w-full h-72 cursor-pointer group">
+            <img class=" w-full h-full object-cover transition "  src="./uploded/3.jpg" alt="">
+            <h1 class="absolute top-0 left-0 text-4xl transition transform scale-0 group-hover:scale-100 text-white flex justify-center items-center bg-purple-500/60 w-full h-full">
+                <span class="text-7xl"><i class="fa-regular fa-circle-play"></i></span>
+            </h1>
+        </div>
+        <div class="item-draw relative overflow-hidden w-full h-72 cursor-pointer group">
+            <img class=" w-full h-full object-cover transition "  src="./uploded/4.jpg" alt="">
+            <h1 class="absolute top-0 left-0 text-4xl transition transform scale-0 group-hover:scale-100 text-white flex justify-center items-center bg-purple-500/60 w-full h-full">
+                <span class="text-7xl"><i class="fa-regular fa-circle-play"></i></span>
+            </h1>
+        </div>
+        <div class="item-draw relative overflow-hidden w-full h-72 cursor-pointer group">
+            <img class=" w-full h-full object-cover transition "  src="./uploded/5.jpg" alt="">
+            <h1 class="absolute top-0 left-0 text-4xl transition transform scale-0 group-hover:scale-100 text-white flex justify-center items-center bg-purple-500/60 w-full h-full">
+                <span class="text-7xl"><i class="fa-regular fa-circle-play"></i></span>
+            </h1>
+        </div>
+        <div class="item-draw relative overflow-hidden w-full h-72 cursor-pointer group">
+            <img class=" w-full h-full object-cover transition "  src="./uploded/6.jpg" alt="">
+            <h1 class="absolute top-0 left-0 text-4xl transition transform scale-0 group-hover:scale-100 text-white flex justify-center items-center bg-purple-500/60 w-full h-full">
+                <span class="text-7xl"><i class="fa-regular fa-circle-play"></i></span>
+            </h1>
+        </div>
+        <div class="item-draw relative overflow-hidden w-full h-72 cursor-pointer group">
+            <img class=" w-full h-full object-cover transition "  src="./uploded/7.jpg" alt="">
+            <h1 class="absolute top-0 left-0 text-4xl transition transform scale-0 group-hover:scale-100 text-white flex justify-center items-center bg-purple-500/60 w-full h-full">
+                <span class="text-7xl"><i class="fa-regular fa-circle-play"></i></span>
+            </h1>
+        </div>
+        <div class="item-draw relative overflow-hidden w-full h-72 cursor-pointer group">
+            <img class=" w-full h-full object-cover transition "  src="./uploded/8.jpg" alt="">
+            <h1 class="absolute top-0 left-0 text-4xl transition transform scale-0 group-hover:scale-100 text-white flex justify-center items-center bg-purple-500/60 w-full h-full">
+                <span class="text-7xl"><i class="fa-regular fa-circle-play"></i></span>
+            </h1>
+        </div>
+        <div class="item-draw relative overflow-hidden w-full h-72 cursor-pointer group">
+            <img class=" w-full h-full object-cover transition "  src="./uploded/9.jpg" alt="">
+            <h1 class="absolute top-0 left-0 text-4xl transition transform scale-0 group-hover:scale-100 text-white flex justify-center items-center bg-purple-500/60 w-full h-full">
+                <span class="text-7xl"><i class="fa-regular fa-circle-play"></i></span>
+            </h1>
+        </div>
+        <div class="item-draw relative overflow-hidden w-full h-72 cursor-pointer group">
+            <img class=" w-full h-full object-cover transition "  src="./uploded/10.jpg" alt="">
+            <h1 class="absolute top-0 left-0 text-4xl transition transform scale-0 group-hover:scale-100 text-white flex justify-center items-center bg-purple-500/60 w-full h-full">
+                <span class="text-7xl"><i class="fa-regular fa-circle-play"></i></span>
+            </h1>
+        </div>
+    </div>
+    <!-- pop image -->
+    <div id="pop-drow" class="fixed inset-0 hidden bg-gray-900/80 p-4 md:p-10 z-50">
+        <div class="main-drow-item relative overflow-x-auto bg-white w-full h-full">
+            <h1 class="text-2xl font-black capitalize p-3">title</h1>
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-2/3 w-full">
+                    <video id="player" class="h-full" playsinline controls data-poster="/path/to/poster.jpg">
+                        <source src="./uploded/asd.mp4" type="video/mp4" />
+                    </video> 
+                </div>
+                <div class="lg:w-1/3 w-full  px-5">
+                    <ul class="shadow-lg">
+                        <li class="p-4">
+                            <span class="font-black">Descripation</span>
+                            <p class="text-justify">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, repudiandae minima minus delectus consequatur reiciendis, quibusdam distinctio saepe quasi, in necessitatibus adipisci sint? Rerum, sequi cupiditate? Omnis, ipsam? Necessitatibus, voluptatibus rerum veritatis hic, neque fugiat molestiae unde autem quidem itaque id possimus aspernatur? Accusantium eius consequatur mollitia? Dolor, inventore nostrum.
+                            </p>
+                        </li>
+                        <li class="px-4 py-1 font-sans">
+                            <span class="font-bold">Category</span><span class="text-sm pl-2">Anime</span>
+                        </li>
+                        <li class="px-4 py-1 font-sans">
+                            <span class="font-bold">Size</span><span class="text-sm pl-2">1920X1020</span>
+                        </li>
+                        <li class="px-4 py-1 font-sans">
+                            <span class="font-bold">Long Time</span><span class="text-sm pl-2">4Day</span>
+                        </li>
+                        <li class="px-4 py-1 font-sans">
+                            <span class="font-bold">Date Add</span><span class="text-sm pl-2">2022/08/10</span>
+                        </li>
+                        <li class="px-4 py-1 font-sans">
+                            <span class="font-bold">Dawnload</span><a href="#" class="text-sm pl-2">Here</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="close absolute top-2 rtl:left-5 hover:text-purple-500 transition-all ltr:right-5 text-5xl"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+    <!--footer-->
+    <div>
+        <span class="p-4 font-sans bg-gray-900 text-white block w-full text-center font-thin text-md">CopyRight by ND 2022</span>
+    </div>
+
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/js/jquery.bxslider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+    <script src="./assets/js/smooth-scroll.polyfills.min.js"></script>
+    <script src="./dist/script.js"></script>
+</body>
+</html>
